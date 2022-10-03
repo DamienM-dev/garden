@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
     <title>Garden | site paysagisme</title>
 </head>
 <body>
@@ -14,7 +19,7 @@
                 <a href="#">G</a>
             </h2>
             <nav id="menu_principal">
-                <ul>
+                <ul id="menu_header">
                     <li>
                         <a class="choix">accueil</a>
                     </li>
@@ -35,10 +40,16 @@
         </header>
 
         <main id="contenu" class="container">
-            <div id="slider">
-                <img src="images/swiper-1.jpg" alt="foret">
-                <!-- <img src="images/swiper-2.jpg" alt="jardin a la Française">
-                <img src="images/swiper-3.jpg" alt="jardin"> -->
+            <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/swiper-1.jpg" alt="foret" title="htmlcaption">
+                <img src="images/swiper-2.jpg" alt="jardin a la Française">
+                <img src="images/swiper-3.jpg" alt="jardin">
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>Garden</strong> Pro design d'extérieur<a href="#">a link</a>. 
+            </div>
+            
             </div>
 
             <section id="en_avant">
@@ -59,8 +70,65 @@
                     <hr size="5" noshade>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam officia provident facilis libero repudiandae necessitatibus obcaecati eligendi est ex.</p></article>
             </section>
-        </main>
+            <div id="bienvenue">
+                <div id="titre-visuel">
+                    <h2>Le design <br>paysage</h2>
+                    <img src="images/home-02.jpg" alt="arbre taillé en coeur">
+                </div>
+                <div id="intro-texte">
+                    <hr size="5" noshade>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem voluptatem tempora corporis animi impedit at delectus adipisci enim totam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem voluptatem tempora corporis animi impedit at delectus adipisci enim totam?</p>
+                    <ul id="menu_intro">
+                        <div>
+                            <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Balance</li>
+                            <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Simplicité</li>
+                            <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Proportion</li>
+                        </div>
 
-    
+                        <div>
+                             <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Unité</li>
+                            <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Ligne et Rythme</li>
+                            <li><img src="images/feuille-picto.jpg" alt="icone de feuille"> Harmonie</li> 
+                        </div>
+                        
+                      
+                    </ul>
+                    <a href="#" id="button_info">Plus d'info</a>
+                </div>
+                
+            </div>
+            <div id="slogan">
+                <h4>Slogan publicitaire</h4>
+            </div>
+        </main>
+        <footer id="pied">
+            <div class="container">
+                <div class="colonne-pied">
+                    <h3>Garden</h3>
+                   <address>ZA de kerluern 5600 Vannes</address>
+                <div>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div> 
+                </div>
+                <div class="colonne-pied">
+                    <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+
+                    <p>Copyright greta 2022</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+<!-- FUNCTION SLIDER -->
+
+        <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        </script>
 </body>
 </html>

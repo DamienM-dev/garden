@@ -73,7 +73,7 @@ ul {
     text-transform: uppercase;
 }
 
-ul li {
+ul#menu_header li {
     margin-right: 20px;
     padding-right: 20px;
     font-size: 1.5rem;
@@ -98,6 +98,7 @@ ul li a.choix {
 main#contenu {
     background-color: var(--fond-gris);
 }
+
     /* ==========section EN_AVANT========== */
 
 section#en_avant {
@@ -108,7 +109,8 @@ section#en_avant {
 }
 
 section#en_avant article.promo {
-   width: 32%;
+   width: 31.6%;
+   margin: 20px 10px;
    background-color: white;
    border: 1px solid #999898;
    padding: 30px 3%;
@@ -124,10 +126,119 @@ section#en_avant article.promo hr {
 }
 section#en_avant article.promo h3{
     margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-family: 'megan_juneregular';
 }
 article.promo p {
     width: 70%;
     line-height: 30px;
     text-align: justify;
     margin: 20px 0;
+}
+#bienvenue {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+#bienvenue .titre-visuel {
+    width: 35%;
+}
+#bienvenue .titre-visuel h2 {
+    font-family: 'megan_juneregular';
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding-left: 6%;
+}
+#bienvenue .titre-visuel img{
+    width:80% ;
+}
+
+#bienvenue #intro-texte hr {
+    width: 4%;
+    color: var(--bordeaux);
+    margin-top: 10px; 
+}
+#intro-texte{
+    margin-left: 30px;
+}
+#bienvenue #intro-texte p {
+
+    width: 80%;
+    margin-bottom: 50px;
+}
+ul#menu_intro {
+    margin-bottom:40px;
+    
+}
+ul#menu_intro div:first-child {
+    margin-right: 70px;
+}
+ul#menu_intro li {
+ 
+padding-right: 20px;
+font-size: 1.5rem;   
+}
+#bienvenue .intro-texte ul li a {
+    font-family: 'megan_juneregular';
+    font-size: 1.5rem;
+    color: black;
+    line-height: 35px;
+
+}
+a#button_info {
+    background-color: var(--vert);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+
+}
+/* ==========section EN_AVANT========== */
+
+#slogan {
+    background-image: url(images/home-05.jpg);
+    background-size: cover;
+    margin: -4px;
+    background-color: white;
+    color: white;
+    height: 200px;
+    
+}
+#slogan h4 {
+    font-family: 'megan_juneregular';
+    font-size: 3rem;
+    text-align: center;
+    padding: 55px;
+
+}
+
+#pied {
+    background-color: black;
+    height: 200px;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+#pied .container {
+    font-family: 'megan_juneregular';
+    display: flex;
+    justify-content: space-between;
+}
+
+#pied .container .colonne-pied a {
+ color: var(--vert);
+ font-size: 2rem;
+}
+#pied .colonne-pied .fa-solid {
+    justify-content: end;
+    display: flex;
+}
+#slider {
+    position: relative;
+}
+div.nivo-caption{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background: none;
 }
