@@ -3,4 +3,86 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Cabin-regular';
+    
+    
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'megan_juneregular';
+    src: url('fonts/megan_june-webfont.woff2') format('woff2'),
+         url('fonts/megan_june-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Cabin-regular';
+    src:  url('fonts/Cabin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Variables */
+
+:root{
+    --vert: #17cd28;
+    --bordeaux:#933646;
+    --fond-gris:#dedddd;
+}
+
+/* header */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+#bandeau {
+    font-family: 'Cabin-regular';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bandeau h2 a {
+    color: black;
+    font-size: 3.5rem;
+    border-bottom: 14px solid var(--bordeaux);
+}
+
+ul {
+    display: flex;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+ul li {
+    margin-right: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    
+}
+ul li a {
+    color: black;
+    padding-bottom: 8px;
+}
+ul li a:hover {
+    border-bottom: 14px solid var(--vert);
+}
+ul li a.choix {
+    border-bottom: 14px solid var(--vert);
 }
