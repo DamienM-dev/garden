@@ -61,10 +61,16 @@ li {
     align-items: center;
 }
 
-#bandeau h2 a {
+ h2 a {
     color: black;
     font-size: 3.5rem;
     border-bottom: 14px solid var(--bordeaux);
+}
+ #burger {
+    font-size: 3rem;
+    text-align: right;
+    margin-right: 15px;
+    display: none;
 }
 
 ul {
@@ -140,6 +146,7 @@ article.promo p {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    min-height:562px ;
 }
 #bienvenue .titre-visuel {
     width: 35%;
@@ -224,6 +231,9 @@ a#button_info {
     display: flex;
     justify-content: space-between;
 }
+.slider-wrapper {
+    background-color: var(--fond-gris);
+}
 
 #pied .container .colonne-pied a {
  color: var(--vert);
@@ -236,9 +246,59 @@ a#button_info {
 #slider {
     position: relative;
 }
+
 div.nivo-caption{
     position: absolute;
     top: 30%;
     left: 35%;
     background: none;
+    font-size: 2rem;
+}
+div.nivo-caption span {
+    color: var(--vert);
+}
+div.theme-default .nivo-controlNav a {
+    background: url(images/blanc.jpg) no-repeat;
+
+
+}
+div.theme-default .nivo-controlNav a.active {
+    background: url(images/rouge.jpg) no-repeat;
+    
+}
+
+@media screen and (max-width: 768px) {
+     #burger {
+        display: block;
+    }
+     ul {
+        display: none;
+    }
+    section#en_avant {
+        display: block;
+    }
+    section#en_avant article.promo {
+        width: 80%;
+        margin:20px auto;
+    }
+    #bienvenue {
+        display: block;
+        text-align: center;
+    }
+    #bienvenue img#arbre {
+        width: 40%;
+    }
+    #bienvenue #intro-texte p, #bienvenue #intro-texte hr {
+        display: none;
+    }
+    #bienvenue #intro-texte ul {
+        display: block;
+    }
+    ul#menu_intro div li {
+        width: 50%;
+        margin: auto;
+    }
+    ul#menu_intro div li img {
+        padding-left: 20px;
+    }
 }
